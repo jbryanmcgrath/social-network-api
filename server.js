@@ -15,6 +15,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social_network_
 
 mongoose.set('debug', true);
 
-// app.use(require('./routes'))
+app.use(require('./routes'))
 
 app.listen(PORT, () => console.log(`Connected to localhost:${PORT}`));
